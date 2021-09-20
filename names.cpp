@@ -15,7 +15,7 @@ using std::string;
 
 vector<string> names;
 
-void getNames(vector<string>&reference) {
+void getNames(vector<string>  &  reference) {
     for(int i=0; i<10; i++){
         string name;
         cout << "Enter a name: ";
