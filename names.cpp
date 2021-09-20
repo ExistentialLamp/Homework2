@@ -34,7 +34,7 @@ bool doesNameExist(const string  &  testName, const vector<string>  &  reference
 }
 
 void printNames(vector<string>  &  reference){
-    cout << "here are the names printed out with just some god awful character substitutions please forgive me";
+    cout << "here are the names printed out with just some god awful character substitutions please forgive me\n";
     cout << " (r's for w's, o's for 0's, e's for 3's, i's for 1's, l's for w's, t's for 7's, b's for 6's)\n";
     for(int i=0; i<reference.size(); i++){
         for(int j=0; j<reference.at(i).length(); j++){
