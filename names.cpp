@@ -15,21 +15,21 @@ using std::string;
 
 vector<string> names;
 
-void getNames() {
+void getNames(vector<string>&reference) {
     for(int i=0; i<10; i++){
         string name;
         cout << "Enter a name: ";
         cin >> name;
-        names.push_back(name);
+        reference.push_back(name);
     }
 }
 
 int main() {
-    getNames();
-    //for debugging remove later uahg;adkg;asjgk
+    getNames(names);
+    //for debugging remove later
     cout << names.size() << endl;
     for(int i=0; i<names.size(); i++){
-        cout << names.at(i);
+        cout << names.at(i) << " ";
     }
     return 0;
 }
