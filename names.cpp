@@ -35,8 +35,7 @@ bool doesNameExist(const string  &  testName, const vector<string>  &  reference
 
 void printNames(vector<string>  &  reference){
     cout << "here are the names printed out with just some god awful character substitutions please forgive me";
-    cout << " (r's for w's, o's for 0's, e's for 3's, i's for 1's, l's for w's, t's for 7's, b's for 6's)";
-    cout << "do you think god stays in heaven cause he too fears what he's created?";
+    cout << " (r's for w's, o's for 0's, e's for 3's, i's for 1's, l's for w's, t's for 7's, b's for 6's)\n";
     for(int i=0; i<reference.size(); i++){
         for(int j=0; j<reference.at(i).length(); j++){
             char & test = reference.at(i)[j];
@@ -83,5 +82,7 @@ int main() {
     getNames(names);
     //cout << doesNameExist("name", names) << endl;
     printNames(names);
+
+    cout << "\n\n\ndo you think god stays in heaven cause he too fears what he's created?";
     return 0;
 }
