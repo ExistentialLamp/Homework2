@@ -13,8 +13,6 @@ using std::endl;
 using std::vector;
 using std::string;
 
-vector<string> names;
-
 void getNames(vector<string>  &  reference) {
     for(int i=0; i<10; i++){
         string name;
@@ -24,12 +22,18 @@ void getNames(vector<string>  &  reference) {
     }
 }
 
-int main() {
-    getNames(names);
-    //for debugging remove later
-    cout << names.size() << endl;
-    for(int i=0; i<names.size(); i++){
-        cout << names.at(i) << " ";
+bool doesNameExist(const string  &  testName, const vector<string>  &  reference){
+    for(int i=0; i<10; i++){
+        if(reference.at(i) == testName){
+            return true;
+        }
     }
+    return false;
+}
+
+int main() {
+    vector<string> names;
+    getNames(names);
+    cout << doesNameExist("name", names);
     return 0;
 }
