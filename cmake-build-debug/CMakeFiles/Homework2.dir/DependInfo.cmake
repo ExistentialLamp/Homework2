@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/owner/CLionProjects/CS201/Homework2/money.cpp" "C:/Users/owner/CLionProjects/CS201/Homework2/cmake-build-debug/CMakeFiles/Homework2.dir/money.cpp.obj"
   "C:/Users/owner/CLionProjects/CS201/Homework2/names.cpp" "C:/Users/owner/CLionProjects/CS201/Homework2/cmake-build-debug/CMakeFiles/Homework2.dir/names.cpp.obj"
+  "C:/Users/owner/CLionProjects/CS201/Homework2/scores.cpp" "C:/Users/owner/CLionProjects/CS201/Homework2/cmake-build-debug/CMakeFiles/Homework2.dir/scores.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -176,6 +176,30 @@ names.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework2.dir\build.make CMakeFiles/Homework2.dir/names.cpp.s
 .PHONY : names.cpp.s
 
+scores.obj: scores.cpp.obj
+.PHONY : scores.obj
+
+# target to build an object file
+scores.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework2.dir\build.make CMakeFiles/Homework2.dir/scores.cpp.obj
+.PHONY : scores.cpp.obj
+
+scores.i: scores.cpp.i
+.PHONY : scores.i
+
+# target to preprocess a source file
+scores.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework2.dir\build.make CMakeFiles/Homework2.dir/scores.cpp.i
+.PHONY : scores.cpp.i
+
+scores.s: scores.cpp.s
+.PHONY : scores.s
+
+# target to generate assembly for a file
+scores.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework2.dir\build.make CMakeFiles/Homework2.dir/scores.cpp.s
+.PHONY : scores.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... names.obj
 	@echo ... names.i
 	@echo ... names.s
+	@echo ... scores.obj
+	@echo ... scores.i
+	@echo ... scores.s
 .PHONY : help
 
 

@@ -2,13 +2,14 @@
  * names.cpp
  * Simon Bosse
  * 9/20/21
- *
+ * It runs the other programs of this assignment as well. Names will ask for 10 names and then make you die of cringe.
  */
 #include <iostream>
 #include <vector>
 #include <string>
 #include <algorithm>
 #include "money.h"
+#include "scores.h"
 
 using std::cin;
 using std::cout;
@@ -85,14 +86,9 @@ void printNames(vector<string>  &  reference){
     }
 }
 
-//encapsulates and runs all of the above once
-void runNames() {
-
-};
-
 
 //vector containing the known programs to run
-vector<string> programs = {"Names", "Money", "Terminate"};
+vector<string> programs = {"Names", "Money", "Scores", "Terminate"};
 
 //Asks user and returns what program they want to run
 string selectProgram(){
@@ -128,10 +124,14 @@ void runProgram(string selectedProgram){
         //im sorry it had to be done
         printNames(names);
 
-        cout << "\n\n\ndo you think god stays in heaven because he too fears what he's created?";;
+        cout << "\n\n\ndo you think god stays in heaven because he too fears what he's created?";
     } else if(selectedProgram == programs.at(1)){
         askCountMoney();
         printCountPlusTotalMoney();
+    } else if (selectedProgram == "Scores") {
+        cout << "This program records a students name and the score they got on an assignment\n";
+        getNamesScores();
+        optionSelect();
     }
 }
 

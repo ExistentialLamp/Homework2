@@ -6,4 +6,8 @@ CMakeFiles/Homework2.dir/money.cpp.obj: \
  ../money.h
 CMakeFiles/Homework2.dir/names.cpp.obj: \
  ../money.h \
- ../names.cpp
+ ../names.cpp \
+ ../scores.h
+CMakeFiles/Homework2.dir/scores.cpp.obj: \
+ ../scores.cpp \
+ ../scores.h
