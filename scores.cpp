@@ -43,6 +43,19 @@ void printNamesScores(){
     }
 }
 
+void searchNames(){
+    string searchQuery;
+    cout << "Whose score do you want to find?";
+    cin >> searchQuery;
+    for(int i=0; i<names.size(); i++){
+        if(names.at(i) == searchQuery){
+            cout << names.at(i) << " has a score of " << scores.at(i) << endl;
+            return;
+        }
+    }
+    cout << "There is no student with the name " << searchQuery << ". (Note: names are case-sensitive)" << endl;
+}
+
 void optionSelect(){
     bool run = true;
     while(run) {
@@ -62,6 +75,7 @@ void optionSelect(){
                 printNamesScores();
                 break;
             case 3:
+                searchNames();
                 break;
             case 4:
                 break;

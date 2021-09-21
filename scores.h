@@ -11,6 +11,9 @@ void getNamesScores();
 //Does exactly what it says
 void printNamesScores();
 
+//Finds and reports the specified students score
+void searchNames();
+
 //Lists things the program can do and has the user select one
 void optionSelect();
 
