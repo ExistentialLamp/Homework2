@@ -27,13 +27,14 @@ void getNamesScores(){
         int score;
         cout << "Enter their score: ";
         cin >> score;
-        //Checks to see if exit condition is met
+        //Duplicate protection
         for(int i=0; i<scores.size(); i++){
             if(name == names.at(i)){
                 cout << name << " is already entered" << endl;
                 return;
             }
         }
+        //Exit condition
         if(name == "NoName" && score == 0){
             return;
         } else{
