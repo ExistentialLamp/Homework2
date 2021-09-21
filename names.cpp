@@ -88,7 +88,7 @@ void printNames(vector<string>  &  reference){
 
 
 //vector containing the known programs to run
-vector<string> programs = {"Names", "Money", "Scores", "Terminate"};
+const vector<string> programs = {"Names", "Money", "Scores", "Terminate"};
 
 //Asks user and returns what program they want to run
 string selectProgram(){
@@ -115,7 +115,7 @@ string selectProgram(){
 
 //Takes a string and runs it based on answers from selectProgram(). It felt right to seperate the two functions idk
 //Probably not DRY
-void runProgram(string selectedProgram){
+void runProgram(const string & selectedProgram){
     if(selectedProgram == programs.at(0)){
         vector<string> names;
         getNames(names);
