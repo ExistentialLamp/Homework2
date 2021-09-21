@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/owner/CLionProjects/CS201/Homework2/money.cpp
+money.h
+C:/Users/owner/CLionProjects/CS201/Homework2/money.h
+iostream
+-
+
+C:/Users/owner/CLionProjects/CS201/Homework2/money.h
+vector
+-
+string
+-
+
 C:/Users/owner/CLionProjects/CS201/Homework2/names.cpp
 iostream
 -
@@ -15,4 +27,6 @@ string
 -
 algorithm
 -
+money.h
+C:/Users/owner/CLionProjects/CS201/Homework2/money.h
 

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Homework2.dir/money.cpp.obj"
   "CMakeFiles/Homework2.dir/names.cpp.obj"
   "Homework2.exe"
   "Homework2.exe.manifest"

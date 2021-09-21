@@ -128,6 +128,30 @@ Homework2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework2.dir\build.make CMakeFiles/Homework2.dir/build
 .PHONY : Homework2/fast
 
+money.obj: money.cpp.obj
+.PHONY : money.obj
+
+# target to build an object file
+money.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework2.dir\build.make CMakeFiles/Homework2.dir/money.cpp.obj
+.PHONY : money.cpp.obj
+
+money.i: money.cpp.i
+.PHONY : money.i
+
+# target to preprocess a source file
+money.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework2.dir\build.make CMakeFiles/Homework2.dir/money.cpp.i
+.PHONY : money.cpp.i
+
+money.s: money.cpp.s
+.PHONY : money.s
+
+# target to generate assembly for a file
+money.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework2.dir\build.make CMakeFiles/Homework2.dir/money.cpp.s
+.PHONY : money.cpp.s
+
 names.obj: names.cpp.obj
 .PHONY : names.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Homework2
+	@echo ... money.obj
+	@echo ... money.i
+	@echo ... money.s
 	@echo ... names.obj
 	@echo ... names.i
 	@echo ... names.s

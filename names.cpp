@@ -8,6 +8,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include "money.h"
 
 using std::cin;
 using std::cout;
@@ -131,6 +132,7 @@ void runProgram(string selectedProgram){
 }
 
 int main() {
-    runProgram(selectProgram());
+    //runProgram(selectProgram());
+    askCount();
     return 0;
 }

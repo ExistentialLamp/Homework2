@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/owner/CLionProjects/CS201/Homework2/money.cpp">
+			<Option target="Homework2"/>
+		</Unit>
+		<Unit filename="C:/Users/owner/CLionProjects/CS201/Homework2/money.h">
+			<Option target="Homework2"/>
+		</Unit>
 		<Unit filename="C:/Users/owner/CLionProjects/CS201/Homework2/names.cpp">
 			<Option target="Homework2"/>
 		</Unit>
