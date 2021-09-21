@@ -18,7 +18,7 @@ using std::string;
 void getNames(vector<string>  &  reference) {
     for(int i=0; i<10; i++){
         string name;
-        cout << "Enter a name: ";
+        cout << "words please: ";
         std::getline(cin, name);
         reference.push_back(name);
     }
@@ -77,12 +77,16 @@ void printNames(vector<string>  &  reference){
     }
 }
 
-int main() {
+void runNames(){
     vector<string> names;
     getNames(names);
-    //cout << doesNameExist("name", names) << endl;
+    if(doesNameExist("Simon", names)){cout << "lmao who names their kid Simon";}
     printNames(names);
 
     cout << "\n\n\ndo you think god stays in heaven cause he too fears what he's created?";
+};
+
+int main() {
+    runNames();
     return 0;
 }
