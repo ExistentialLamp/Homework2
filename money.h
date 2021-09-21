@@ -13,10 +13,10 @@ const std::vector<std::string> coin = {"penny", "nickel", "dime", "quarter", "ha
 const std::vector<int> value = {1, 5, 10, 25, 50};
 
 //Asks user how many of each coin they have
-std::vector<int> askCount();
+void askCountMoney();
 
-//Asks, and then prints how many of each coin the user has, then get the sum using above functions
-void runMoney();
+//Takes gathered data
+void printCountPlusTotalMoney();
 
 
 #endif //HOMEWORK2_MONEY_H

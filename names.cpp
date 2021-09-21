@@ -87,14 +87,7 @@ void printNames(vector<string>  &  reference){
 
 //encapsulates and runs all of the above once
 void runNames() {
-    vector<string> names;
-    getNames(names);
-    //hey thats my name wtf
-    if(doesNameExist("Simon", names)){cout << "lmao who names their kid Simon";}
-    //im sorry it had to be done
-    printNames(names);
 
-    cout << "\n\n\ndo you think god stays in heaven cause he too fears what he's created?";
 };
 
 
@@ -125,11 +118,20 @@ string selectProgram(){
 }
 
 //Takes a string and runs it based on answers from selectProgram(). It felt right to seperate the two functions idk
+//Probably not DRY
 void runProgram(string selectedProgram){
     if(selectedProgram == programs.at(0)){
-        runNames();
+        vector<string> names;
+        getNames(names);
+        //hey thats my name wtf
+        if(doesNameExist("Simon", names)){cout << "lmao who names their kid Simon";}
+        //im sorry it had to be done
+        printNames(names);
+
+        cout << "\n\n\ndo you think god stays in heaven because he too fears what he's created?";;
     } else if(selectedProgram == programs.at(1)){
-        runMoney();
+        askCountMoney();
+        printCountPlusTotalMoney();
     }
 }
 
