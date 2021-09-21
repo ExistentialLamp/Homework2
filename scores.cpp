@@ -37,6 +37,12 @@ void getNamesScores(){
     }
 }
 
+void printNamesScores(){
+    for(int i=0; i<names.size(); i++){
+        cout << names.at(i) << " " << scores.at(i) << endl;
+    }
+}
+
 void optionSelect(){
     bool run = true;
     while(run) {
@@ -53,6 +59,7 @@ void optionSelect(){
                 getNamesScores();
                 break;
             case 2:
+                printNamesScores();
                 break;
             case 3:
                 break;

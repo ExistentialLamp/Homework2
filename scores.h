@@ -8,6 +8,10 @@
 //Creates name score pairs until the user stops
 void getNamesScores();
 
+//Does exactly what it says
+void printNamesScores();
+
 //Lists things the program can do and has the user select one
 void optionSelect();
+
 #endif //HOMEWORK2_SCORES_H
