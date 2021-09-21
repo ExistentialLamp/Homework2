@@ -99,7 +99,7 @@ void runNames() {
 
 
 //vector containing the known programs to run
-vector<string> programs = {"Names", "Terminate"};
+vector<string> programs = {"Names", "Money", "Terminate"};
 
 //Asks user and returns what program they want to run
 string selectProgram(){
@@ -128,11 +128,12 @@ string selectProgram(){
 void runProgram(string selectedProgram){
     if(selectedProgram == programs.at(0)){
         runNames();
+    } else if(selectedProgram == programs.at(1)){
+        runMoney();
     }
 }
 
 int main() {
-    //runProgram(selectProgram());
-    askCount();
+    runProgram(selectProgram());
     return 0;
 }

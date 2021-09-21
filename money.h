@@ -15,5 +15,8 @@ const std::vector<int> value = {1, 5, 10, 25, 50};
 //Asks user how many of each coin they have
 std::vector<int> askCount();
 
+//Asks, and then prints how many of each coin the user has, then get the sum using above functions
+void runMoney();
+
 
 #endif //HOMEWORK2_MONEY_H

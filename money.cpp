@@ -21,3 +21,7 @@ vector<int> askCount(){
     }
     return count;
 }
+
+void runMoney(){
+    askCount();
+}
