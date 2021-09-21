@@ -56,6 +56,26 @@ void searchNames(){
     cout << "There is no student with the name " << searchQuery << ". (Note: names are case-sensitive)" << endl;
 }
 
+void searchScores(){
+    int searchQuery;
+    cout << "What score do you want to search?";
+    cin >> searchQuery;
+    int successfulFinds = 0;
+    //search algo
+    for(int i=0; i<scores.size(); i++) {
+        if(scores.at(i) == searchQuery){
+            cout << names.at(i) << endl;
+            successfulFinds++;
+        }
+    }
+    //Check to see if any students got specified score
+    if (successfulFinds == 0) {
+        cout << "There are no students with a score of " << searchQuery;
+    } else{
+        cout << "These students got a score of " << searchQuery;
+    }
+}
+
 void optionSelect(){
     bool run = true;
     while(run) {
@@ -78,6 +98,7 @@ void optionSelect(){
                 searchNames();
                 break;
             case 4:
+                searchScores();
                 break;
             default:
                 run = false;

@@ -131,6 +131,7 @@ void runProgram(string selectedProgram){
     } else if (selectedProgram == "Scores") {
         cout << "This program records a students name and the score they got on an assignment\n";
         getNamesScores();
+        printNamesScores();
         optionSelect();
     }
 }
